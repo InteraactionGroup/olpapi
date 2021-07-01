@@ -1,0 +1,28 @@
+{
+  "name": "picto-api",
+  "version": "1.0.0",
+  "description": "RESTful API for pictogram search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanRoyer/picto-api.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "pictogram"
+  ],
+  "author": "Nathan Royer <nathan.royer.pro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanRoyer/picto-api/issues"
+  },
+  "homepage": "https://github.com/NathanRoyer/picto-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "natural": "^5.0.3"
+  }
+}

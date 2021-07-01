@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>picto-api interface</title>
+		<link rel="stylesheet" href="mobile.css" media="(max-width: 700px)">
+		<link rel="stylesheet" href="desktop.css" media="(min-width: 700px)">
+		<style type="text/css" id="highlit-token-css"></style>
+		<script src="picto-api.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body onload="onBodyLoad()" class="m-view-sentence">
+		<div id="toolbar">
+			<select class="b-right mb-right" id="language-select">
+				<option value="eng">English</option>
+				<option value="fra">Français</option>
+			</select>
+			<button class="b-right mb-right" id="upload-translation"></button>
+			<button class="mobile-only mb-right" id="mobile-switch-view">Mode 🗘</button>
+			<select class="b-right" id="missing-entity">
+				<option id="missing-placholder" selected="true" value="none"></option>
+				<option id="missing-token" value="token"></option>
+				<option id="missing-meaning" value="meaning"></option>
+				<option id="missing-pictogram" value="pictogram"></option>
+				<option id="missing-expression" value="expression"></option>
+			</select>
+			<span id="loading-indicator"></span>
+		</div>
+		<div id="sentence-and-meanings" class="b-top mb-top top-split-v">
+			<div id="sentence-inputs">
+				<div id="sentence-input-and-highlights">
+					<textarea class="entry-display" id="sentence-input"></textarea>
+					<div class="entry-display" id="text-highlights"></div>
+				</div>
+				<textarea class="entry-display b-top" id="sentence-alternative"></textarea>
+			</div>
+			<div class="b-left mb-top" id="meanings-list"></div>
+		</div>
+		<div class="b-top mb-top top-split-v" id="picto-groups">
+			<div class="b-right"></div>
+		</div>
+		<div class="b-top mb-top picto-library" id="picto-sentence"></div>
+		<img src="trash.png" id="trash">
+	</body>
+</html>

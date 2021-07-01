@@ -1,0 +1,154 @@
+body {
+	background-color: #333;
+	color: #eee;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.flex-x {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-y {
+	display: flex;
+	flex-direction: column;
+}
+
+#status-bar {
+	padding: 0.5em;
+}
+
+#status-bar, #left-panel {
+	background-color: #222;
+	box-shadow: 2px 0 2px #222;
+}
+
+#left-panel {
+	min-width: 200px;
+}
+
+#left-panel summary, #left-panel > button, #left-panel > span {
+	font-size: 1.1em;
+	padding: 1em;
+}
+
+#left-panel > span {
+	text-align: center;
+}
+
+#left-panel > :not(:last-child) {
+	border-bottom: 3px solid #333;
+}
+
+#left-panel button {
+	cursor: pointer;
+	color: inherit;
+	background-color: transparent;
+	border-top: 1px solid #333;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 1em;
+	text-align: left;
+}
+
+#left-panel button:hover, #actions > div:hover {
+	background: #333;
+}
+
+#actions > div {
+	padding: 1em;
+	border-bottom: 1px solid #333;
+	cursor: pointer;
+}
+
+.grow, .spacer {
+	flex-grow: 1;
+}
+
+#main-panel {
+	padding: 3em;
+	overflow-y: auto;
+}
+
+#main-panel > div > div {
+	padding: 1em;
+	border-bottom: 2px solid #bbb;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+#main-panel > div > div.focus {
+	background-color: #2e2e2e;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+}
+
+#main-panel > div:first-child > div {
+	border-top: 2px dashed #bbb;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#main-panel > div > div > *,
+#main-panel > div > div > div > * {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+#main-panel > div > div > :not(div):not(h3) {
+	align-self: center;
+}
+
+#main-panel > div > div > div.center-align {
+	justify-content: space-around;
+	align-items: center;
+}
+
+#main-panel :not(.focus) > .focus-to-expand {
+	max-width: 50%;
+}
+
+#main-panel :not(.focus) > .focus-to-expand > span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	align-self: stretch;
+}
+
+#main-panel .focus > .focus-to-expand > span {
+	align-self: stretch;
+}
+
+#table-headers > :not(.current-header) {
+	display: none;
+}
+
+#table-templates {
+	display: none;
+}
+
+.picto-sentence {
+	margin-top: 1em;
+	overflow-x: auto;
+}
+
+:not(.focus) > div > .picto-sentence {
+	display: none;
+}
+
+.picto-sentence > img {
+	height: 15em;
+}
+
+.revoked {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+a {
+	color: inherit;
+}

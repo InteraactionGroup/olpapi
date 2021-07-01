@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>picto-api admin page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="desktop.css">
+		<script type="text/javascript" src="../picto-api.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body onload="onBodyLoad();" class="flex-y">
+		<div id="status-bar" class="flex-x">
+			<span class="grow">Console</span>
+			<span id="status">Status</span>
+		</div>
+		<div class="flex-x grow">
+			<div id="left-panel" class="flex-y">
+				<button id="btn-uploads">Submissions</button>
+				<button id="btn-reports">Reports</button>
+				<button id="btn-updates">Updates</button>
+				<button id="btn-pictograms">Pictograms</button>
+				<button id="btn-wordnets">Wordnets</button>
+				<div class="spacer"></div>
+				<div id="actions" class="flex-y">
+				</div>
+			</div>
+			<div id="main-panel" class="flex-y grow">
+				<div id="table-headers" class="flex-y">
+					<div id="uploads-header" class="flex-x">
+						<div class="flex-y">
+							<span>Submissions</span>
+						</div>
+					</div>
+					<div id="reports-header" class="flex-x">
+						<div class="flex-y">
+							<span>Sentence</span>
+						</div>
+						<div class="flex-y">
+							<span>Issue</span>
+						</div>
+					</div>
+					<div id="updates-header" class="flex-x">
+						<div class="flex-y">
+							<span>Item</span>
+						</div>
+						<div class="flex-y">
+							<span>Action</span>
+						</div>
+					</div>
+					<div id="banks-header" class="flex-x">
+						<div class="flex-x center-align">
+							<span>Bank</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>Contact Address</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>Size</span>
+							<span>Format</span>
+						</div>
+					</div>
+					<div id="wordnets-header" class="flex-x">
+						<div class="flex-x center-align">
+							<span>Language</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>Variations</span>
+							<span>StopList</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>Sense keys</span>
+							<span>Definitions</span>
+						</div>
+					</div>
+					<div id="word-variations-header" class="flex-x">
+						<div class="flex-y">
+							<span>Variant</span>
+						</div>
+						<div class="flex-y">
+							<span>Canonical form</span>
+						</div>
+					</div>
+					<div id="stop-list-header" class="flex-x">
+						<div class="flex-y">
+							<span>Disabled word</span>
+						</div>
+					</div>
+					<div id="word-meanings-header" class="flex-x">
+						<div class="flex-y">
+							<span>Word</span>
+						</div>
+						<div class="flex-y">
+							<span>Meanings</span>
+						</div>
+					</div>
+					<div id="meanings-definitions-header" class="flex-x">
+						<div class="flex-y">
+							<span>Meaning ID</span>
+						</div>
+						<div class="flex-y">
+							<span>Definition</span>
+						</div>
+					</div>
+				</div>
+				<div id="table-templates" class="flex-y">
+					<div id="uploads-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+							<div class="flex-x picto-sentence"></div>
+						</div>
+					</div>
+					<div id="reports-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+							<span>#</span>
+						</div>
+						<div class="flex-y">
+							<span>#</span>
+							<span>#</span>
+						</div>
+					</div>
+					<div id="updates-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+					</div>
+					<div id="banks-template" class="flex-x">
+						<div class="flex-x">
+							<span>#</span>
+						</div>
+						<div class="flex-x center-align">
+							<a href="#">#</a>
+						</div>
+						<div class="flex-x center-align">
+							<span>#</span>
+							<span>#</span>
+						</div>
+					</div>
+					<div id="wordnets-template" class="flex-x">
+						<div class="flex-x">
+							<span>#</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>#</span>
+							<span>#</span>
+						</div>
+						<div class="flex-x center-align">
+							<span>#</span>
+							<span>#</span>
+						</div>
+					</div>
+					<div id="word-variations-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+					</div>
+					<div id="stop-list-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+					</div>
+					<div id="word-meanings-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+						<div class="flex-y focus-to-expand">
+							<span>#</span>
+						</div>
+					</div>
+					<div id="meanings-definitions-template" class="flex-x">
+						<div class="flex-y">
+							<span>#</span>
+						</div>
+						<div class="flex-y focus-to-expand">
+							<span>#</span>
+						</div>
+					</div>
+				</div>
+				<div id="table-rows" class="flex-y">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
