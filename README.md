@@ -6,7 +6,7 @@ It is to be used in conjunction with pictogram databases such as ARASAAC or Mulb
 ## Cloning
 In a console, on linux:
 ```sh
-git clone https://github.com/getalp/olpapi/
+git clone https://github.com/InteraactionGroup/olpapi/
 cd olpapi
 ```
 
@@ -27,13 +27,13 @@ This repository includes a script which you can use to use this API with ARASAAC
 ## ARASAAC
 ARASAAC has around 13000 pictograms in PNG format, weighting around 630MB.
 ```sh
-git clone https://github.com/getalp/olpapi-arasaac/ pictograms/arasaac
+git clone https://github.com/InteraactionGroup/olpapi-arasaac/ pictograms/arasaac
 ```
 
 ## Mulberry
 Mulberry has around 3500 pictograms in SVG format, weighting around 15MB.
 ```sh
-git clone https://github.com/getalp/olpapi-mulberry/ pictograms/mulberry
+git clone https://github.com/InteraactionGroup/olpapi-mulberry/ pictograms/mulberry
 ```
 
 # References
