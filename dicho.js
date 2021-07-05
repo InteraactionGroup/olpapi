@@ -36,7 +36,7 @@ class Dichotomous {
 		this.keys.splice(idx, delCount, key);
 		this.values.splice(idx, delCount, value);
 	}
-	del(key, value) {
+	del(key) {
 		let [found, idx] = this._dichotomy(key);
 		let delCount = found ? 1 : 0;
 		this.keys.splice(idx, delCount);
