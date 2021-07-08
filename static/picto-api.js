@@ -57,7 +57,7 @@ class PictoApi {
 		this._phoneHome(path, callback, error);
 	}
 	pictograms(synsets, callback, error) {
-		let path = ['s2p', synsets.join('+')];
+		let path = ['s2p', synsets.map(encodeURIComponent).join('+')];
 		this._phoneHome(path, callback, error);
 	}
 	// DIRECT DATA SEARCH
