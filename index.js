@@ -47,7 +47,7 @@ const toolboxes = (() => {
 		if (!fs.lstatSync(dir).isDirectory()) continue;
 		let tokName = read(dir + '/tokenizer.txt').split('\n')[0];
 		toolboxes[lang] = {
-			tokenizer: new natural[tokName](),
+			tokenizer: new natural.WordTokenizer(),
 			// a map taking a word and returning synsets (potential meanings)
 			synsets: dicho(dir + '/synsets.json'),
 			// a map taking a word and returning its canonical form
